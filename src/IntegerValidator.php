@@ -1,3 +1,11 @@
+<?php
+
+namespace RENDU\ValuesValidator;
+class IntegerValidator
+{
+    public function __construct()
+    {
+    }
 
     public static function superior($a, $b)
     {
