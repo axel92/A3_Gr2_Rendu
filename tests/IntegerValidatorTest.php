@@ -21,13 +21,13 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     public function testGenerateIntegerIsSuperior()
     {
         $value = mt_rand(0, 10);
-        $this->assertTrue(IntegerValidator::euperior($value, --$value));
+        $this->assertTrue(IntegerValidator::superior($value, --$value));
     }
 
     public function testGenerateIntegerIsNotSuperior()
     {
         $value = mt_rand(0, 10);
-        $this->assertFalse(IntegerValidator::euperior($value, ++$value));
+        $this->assertFalse(IntegerValidator::superior($value, ++$value));
     }
 
     public function testGenerateIntegerIsInferior()

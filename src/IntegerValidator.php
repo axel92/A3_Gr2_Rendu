@@ -1,20 +1,3 @@
-<?php
-
-namespace RENDU\ValuesValidator;
-class IntegerValidator
-{
-    public function __construct()
-    {
-    }
-
-    public static function equal($a, $b)
-    {
-        if(!is_int($a) || !is_int($b))
-        {
-            throw new \Exception("You must give integers as params");
-        }
-        return $a == $b ? true : false;
-    }
 
     public static function superior($a, $b)
     {
