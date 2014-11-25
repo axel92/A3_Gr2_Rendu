@@ -47,7 +47,7 @@ class IntegerValidator
     {
         if(!is_int($value))
         {
-            throw new \Exception("You must give integers as params");
+            throw new \Exception("You must give integers as param");
         }
         return $value <= 0 ? true : false;
     }
@@ -56,7 +56,7 @@ class IntegerValidator
     {
         if(!is_int($value))
         {
-            throw new \Exception("You must give integers as params");
+            throw new \Exception("You must give integers as param");
         }
         return $value >= 0 ? true : false;
     }

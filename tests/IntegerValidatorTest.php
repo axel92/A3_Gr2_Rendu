@@ -2,7 +2,7 @@
 
 namespace tests\RENDU\ValuesValidator;
 
-use \RENDU\ValuesValidator\IntegerValidatorl;
+use \RENDU\ValuesValidator\IntegerValidator;
 
 class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -51,7 +51,7 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
     public function testGenerateIntegerIsNotBetween()
     {
         $value = mt_rand(0, 10);
-        $this->assertFalse(IntegerValidator::between($value, ++$value, --$value));
+        $this->assertFalse(IntegerValidator::between($value, ++$value, $value - 2));
     }
 
     public function testGenerateIntegerIsNegative()
