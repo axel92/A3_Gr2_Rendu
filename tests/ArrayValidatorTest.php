@@ -21,7 +21,7 @@ class ArrayValidatorTest extends \PHPUnit_Framework_TestCase
     public function testException()
     {
         $array = array('Moto' => 5);
-        ArrayValidator::compare($array, 'sd', 1);
+        ArrayValidator::compare($array, 'hello', 1);
     }
 
     public function testArrayIsEqual()
